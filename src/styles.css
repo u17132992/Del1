@@ -1,0 +1,6 @@
+@import '../node_modules/@angular/material/prebuilt-themes/purple-green.css';
+
+th, td {
+    padding: 15px;
+    text-align: left;
+  }
