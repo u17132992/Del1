@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar class ="title">
+    <ion-title>
+      General Information
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+        <ion-img src="/assets/generalinformation.jpg"></ion-img>
+          <ion-list lines="none">
+            <ion-item  *ngFor="let generalinformation of allGeneralinformations | async">
+      
+            <p>{{generalinformation.GeneralDesc}}</p>
+      
+           </ion-item>
+           <br>
+           </ion-list>
+    </ion-card>
+</ion-content>

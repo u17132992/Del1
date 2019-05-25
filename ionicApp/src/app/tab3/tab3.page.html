@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+        Malaria Prevention
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-card>
+          <ion-img src="/assets/prevention.jpg"></ion-img>
+      <ion-list lines="none">
+    <ion-item  *ngFor="let prevention of allPreventions | async">  
+        
+            <p>{{prevention.PreventionDesc}}</p>
+        
+    </ion-item>
+      </ion-list>
+      </ion-card>
+  </ion-content>
+  
