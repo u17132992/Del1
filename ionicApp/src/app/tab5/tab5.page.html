@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+        Malaria Transmission
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-card>
+      <ion-img src="/assets/transmission.jpg"></ion-img>
+      <ion-list lines="none">
+    <ion-item  *ngFor="let transmission of allTransmissions | async"> 
+       
+      <p>{{transmission.TransmissionDesc}}</p>
+        
+    </ion-item>
+      </ion-list>
+      </ion-card>
+  </ion-content>
+  

@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+        Symptoms
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-card>
+          <ion-img src="/assets/symptoms.png"></ion-img>
+      <ion-list lines="none">
+    <ion-item  *ngFor="let symptom of allSymptoms | async"> 
+       
+        <p>{{symptom.SymptomDesc}}</p>
+       
+    </ion-item>
+      </ion-list>
+      </ion-card>
+  </ion-content>
