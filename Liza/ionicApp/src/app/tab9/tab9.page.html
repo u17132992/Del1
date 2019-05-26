@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+       Malaria Prone Areas
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-card>
+          <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-list lines="none">
+    <ion-item *ngFor="let malariaarea of allMalariaareas | async">   
+        <p>
+            {{malariaarea.Country}}
+        </p>
+    </ion-item>
+      </ion-list>
+      </ion-card>
+  </ion-content>

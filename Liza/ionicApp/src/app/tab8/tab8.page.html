@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+       Emergency Contacts
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-card>
+          <ion-img src="/assets/emergency.jpg"></ion-img>
+      <ion-list lines="none">
+    <ion-item  *ngFor="let emergencycontact of allEmergencycontacts | async">
+        <p>Name: {{emergencycontact.EmergencyName}}</p>
+    </ion-item>
+    <ion-item  *ngFor="let emergencycontact of allEmergencycontacts | async">
+
+        <p>Number: {{emergencycontact.EmergencyContactNumber}}</p>
+    </ion-item>
+    <ion-item  *ngFor="let emergencycontact of allEmergencycontacts | async">
+        <p>Email: {{emergencycontact.EmergencyEmail}}</p>
+    </ion-item>
+    <ion-item  *ngFor="let emergencycontact of allEmergencycontacts | async">
+         <p>Address: {{emergencycontact.EmergencyAddress}}</p>
+        
+    </ion-item>
+    <br>
+      </ion-list>
+      </ion-card>
+  </ion-content>
