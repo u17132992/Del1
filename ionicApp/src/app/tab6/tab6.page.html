@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+        Malaria Treatment
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-card>
+          <ion-img src="/assets/treatment.jpg"></ion-img>
+      <ion-list lines="none">
+    <ion-item  *ngFor="let treatment of allTreatments | async">  
+        
+      <p> {{treatment.TreatmentDesc}} </p>
+       
+    </ion-item>
+      </ion-list>
+      </ion-card>
+  </ion-content>

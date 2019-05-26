@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-title>
+        Fun Facts about Malaria
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-card>
+          <ion-img src="/assets/facts.jpg"></ion-img>
+      <ion-list lines="none">
+    <ion-item *ngFor="let funFact of allFunFacts | async">   
+        
+      <p>{{funFact.FunFactDesc}}</p>
+        
+    </ion-item>
+      </ion-list>
+      </ion-card>
+  </ion-content>
