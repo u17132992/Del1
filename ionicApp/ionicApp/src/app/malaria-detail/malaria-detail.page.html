@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbar class ="title">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{ malaria.state }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card padding>
+      <h3>Malaria name : {{ malaria.name }}</h3>
+      <p>Location : {{ malaria.state }}</p>
+    </ion-card>
+    <div #map id="map"></div>
+  </ion-content>
